@@ -60,3 +60,35 @@ Example :- cd villanorDjango
 Example :- 
 - python manage.py runserver 3000
 
+
+
+## file Structure
+- Project level 
+- app level
+
+
+## All data come from manage.py
+## All file data with was created setting.py 
+## All route was handel by urls.py
+
+## To create route in a views.py
+
+
+## Flow to create a routes 
+- views.py has to create a function or render a file
+- in urls.py has define the routes and which file is render form views.py
+
+## Pages was create in the new folder name as "templates"
+
+
+## To inject a static file in "{% %}" the are known as placeholder
+
+## To use css from another folder by a 
+- {% load static %} ## This is top of file
+
+- {% static "file_path" %}
+
+- after this you have to give the setting.py
+-- import os
+
+-- STATICFILES_DIRS = [os.path.join (BASE_DIR, 'static')]
