@@ -1,7 +1,6 @@
 # Notes/Way of use Django
 
 
-
 ## Django :- It is reticula fast and very efficacy
 
 
@@ -92,3 +91,15 @@ Example :-
 -- import os
 
 -- STATICFILES_DIRS = [os.path.join (BASE_DIR, 'static')]
+
+
+## 
+
+## {{for a dynamic data }}
+
+
+## 
+
+# To create a app in Django 
+- python .\manage.py startapp {app name}
+- python .\manage.py startapp villan
