@@ -1,11 +1,13 @@
 {
   "cSpell.words": [
+    "contenttypes",
     "runserver",
     "startapp",
     "startproject",
     "STATICFILES",
     "venv",
     "villan",
-    "villanor"
+    "villanor",
+    "yyhq"
   ]
 }
