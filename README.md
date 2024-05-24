@@ -258,3 +258,30 @@ https://django-tailwind.readthedocs.io/en/latest/installation.html
 
 
 
+### Remove errror
+
+
+```
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+```
+
+by python manage.py migrate
+
+byy this cmd admin panel  was created
+
+## Now you have to create a username or password for admin panel 
+
+```
+
+python manage.py createsuperuser
+```
+
+```
+Username (leave blank to use 'villan'): Here is your username
+Email address:
+Password:
+Password (again):
+```
