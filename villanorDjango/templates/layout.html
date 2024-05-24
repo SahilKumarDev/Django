@@ -1,3 +1,5 @@
+{% load static tailwind_tags %}
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -5,13 +7,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>villan with django</title>
+  <title>
+    
+    {% block title %}
+    default Value
+    {% endblock %}
+  </title>
 
   <link rel="stylesheet" href="{% static 'style.css' %}">
+  {% tailwind_css %}
+  
 </head>
 <body>
-
-  <h1 class="text-3xl">About Page</h1>
   
+  <nav class=" text-center">This is navabr</nav>
+
+
+  {% block content %}{% endblock %}
+
+
 </body>
 </html>

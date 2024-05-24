@@ -14,13 +14,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path
+from django.contrib import admin 
+from django.urls import path, include 
 
 # This is a views file import
-from . import views
-
-
+from . import views 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,4 +27,11 @@ urlpatterns = [
     path('', views.home, name="home"),
     path('about/', views.about, name="about"),
     path('contact/', views.contact, name="contact"),
+
+    # IT IS PASS OF URLS IN APP OR PASS ROUTES IN THEM
+    path('villan/', include('villan.urls')),
+    
+    
+    # For the hot reload of web page IT ALWAYS AT THE BOTTOM OF ALL PATH
+     path("__reload__/", include("django_browser_reload.urls")),
 ]
