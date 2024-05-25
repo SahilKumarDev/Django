@@ -144,6 +144,10 @@ STATIC_URL = 'static/'
 # It is linking url
 STATICFILES_DIRS = [os.path.join (BASE_DIR, 'static')]
 
+# It is for a image store
+MEDIA_URL = '/media/'
+Media_root = os.path.join (BASE_DIR, 'media')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
