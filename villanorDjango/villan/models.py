@@ -12,6 +12,8 @@ class VillanVariety(models.Model):
   image = models.ImageField(upload_to='villan/')
   date_added = models.DateTimeField(default=timezone.now)
   type = models.CharField(max_length=2, choices=VILLAN_TYPE_CHOICE)
+  description = models.TextField(default="")
+  price = models.TextField(default="") 
   
   
   def __str__(self):

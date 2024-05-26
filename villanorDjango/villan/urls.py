@@ -8,5 +8,5 @@ from . import views
 urlpatterns = [    
     # Its a config which you have to write when to load a static page on web server
     path('', views.villan, name="villan"),
-    path('all-villan', views.allvillan, name="all_villan"),
+    path('<int:villan_id>/', views.villandetails, name="villan_details"),
 ]

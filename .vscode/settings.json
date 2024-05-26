@@ -7,7 +7,9 @@
     "STATICFILES",
     "venv",
     "villan",
+    "villandetails",
     "villanor",
+    "villans",
     "yyhq"
   ]
 }

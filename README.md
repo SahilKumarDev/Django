@@ -41,9 +41,3 @@
 ## 19. Create a custom user permissions
 
 ## 20. Create a custom user groups
-
-
-################################################################################
-
-# model
-- 
